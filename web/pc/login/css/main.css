@@ -417,4 +417,99 @@ a, a:hover {
           text-align: right;
           color: #84a3e3; }
 
+.m-sign-chy {
+  background: #0078d8;
+  padding-top: 50px; }
+  .m-sign-chy .clearfix:after, .m-sign-chy .clearfix:before {
+    display: table;
+    content: ""; }
+  .m-sign-chy .clearfix:after {
+    clear: both; }
+  .m-sign-chy .view {
+    margin: 0 auto;
+    width: 202px; }
+    .m-sign-chy .view .title a {
+      display: block;
+      font-size: 15px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      -webkit-transition: color .1s ease,background-color .1s ease; }
+    .m-sign-chy .view .title .signup {
+      float: right; }
+    .m-sign-chy .view .input_wrap {
+      margin-top: 18px; }
+      .m-sign-chy .view .input_wrap input {
+        padding: 8px 10px;
+        margin: 0;
+        display: block;
+        width: 100%;
+        line-height: 15px;
+        background: #e7f1f8;
+        font-size: 14px;
+        border: 1px solid #1672B9;
+        color: #555;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 2px rgba(15, 82, 135, 0.25), 0 1px 0 rgba(255, 255, 255, 0.15); }
+    .m-sign-chy .view .fail {
+      margin: 18px 0 0;
+      padding: 10px;
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.15); }
+      .m-sign-chy .view .fail ul li {
+        line-height: 18px;
+        font-size: 12px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+    .m-sign-chy .view .button-wrap {
+      margin-top: 20px; }
+      .m-sign-chy .view .button-wrap .btn {
+        border: 1px solid #1D80CF;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: #80C3F7;
+        background: -webkit-gradient(linear, left top, left bottom, from(#80c3f7), to(#6bbaf8));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(50, 50, 50, 0.05);
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 31px;
+        display: block;
+        padding: 0 15px;
+        outline: 0; }
+    .m-sign-chy .view .sign_rember {
+      margin-top: 18px; }
+      .m-sign-chy .view .sign_rember .remember-me {
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+        text-decoration: none;
+        font-size: 12px; }
+      .m-sign-chy .view .sign_rember .forget_pwd {
+        display: inline-block;
+        float: right;
+        font-size: 12px;
+        color: #fff; }
+    .m-sign-chy .view .third-party-signup {
+      margin-top: 18px;
+      text-align: left;
+      font-size: 14px;
+      color: #fff; }
+      .m-sign-chy .view .third-party-signup a {
+        display: inline-block;
+        margin-left: 10px;
+        width: 14px;
+        height: 14px;
+        background: url(../images/simple_login_sina.png) no-repeat;
+        background-size: 100%; }
+      .m-sign-chy .view .third-party-signup .teng {
+        background: url(../images/simple_login_teng.png) no-repeat;
+        background-size: 100%; }
+
 /*# sourceMappingURL=main.css.map */

@@ -67,76 +67,6 @@ body {
 a, a:hover {
   color: #333; }
 
-.g-wrap {
-  background: #f8f8f8;
-  margin: 0;
-  padding-top: 30px;
-  height: 100%;
-  width: 100%; }
-  .g-wrap .m-main-chy {
-    width: 800px;
-    margin: 0 auto; }
-    .g-wrap .m-main-chy .goLogin {
-      padding: 5px 0;
-      border-bottom: 1px solid #538700;
-      font-size: 14px;
-      font-family: "SimSun";
-      font-weight: normal;
-      text-align: right; }
-      .g-wrap .m-main-chy .goLogin a {
-        color: #00b4ff; }
-        .g-wrap .m-main-chy .goLogin a:hover {
-          color: #cbff20; }
-    .g-wrap .m-main-chy .con {
-      padding-top: 30px;
-      margin-top: 10px;
-      background: white; }
-      .g-wrap .m-main-chy .con:before, .g-wrap .m-main-chy .con:after {
-        display: table;
-        content: ""; }
-      .g-wrap .m-main-chy .con:after {
-        clear: both; }
-      .g-wrap .m-main-chy .con .left {
-        float: left;
-        width: 50%; }
-        .g-wrap .m-main-chy .con .left .form1 .form-group {
-          margin-top: 14px; }
-          .g-wrap .m-main-chy .con .left .form1 .form-group:before, .g-wrap .m-main-chy .con .left .form1 .form-group:after {
-            display: table;
-            content: ""; }
-          .g-wrap .m-main-chy .con .left .form1 .form-group:after {
-            clear: both; }
-          .g-wrap .m-main-chy .con .left .form1 .form-group .label {
-            float: left;
-            padding-top: 4px;
-            width: 30%;
-            text-align: right;
-            font-size: 14px; }
-          .g-wrap .m-main-chy .con .left .form1 .form-group .shuru {
-            width: 70%;
-            float: left; }
-            .g-wrap .m-main-chy .con .left .form1 .form-group .shuru input {
-              padding: 4px 10px;
-              font-size: 14px;
-              width: 80%; }
-          .g-wrap .m-main-chy .con .left .form1 .form-group .btn {
-            padding-left: 30%;
-            float: left;
-            width: 100%; }
-            .g-wrap .m-main-chy .con .left .form1 .form-group .btn button {
-              width: 80%;
-              padding: 6px 0;
-              border: none;
-              background: #538700;
-              color: #fff;
-              font-size: 14px; }
-      .g-wrap .m-main-chy .con .right {
-        float: right;
-        padding: 100px;
-        width: 50%;
-        color: #fff;
-        background: #11cfff; }
-
 .m-main-cy {
   padding-top: 80px;
   background: #333; }
@@ -314,6 +244,76 @@ a, a:hover {
     }
     .modal-header{border-bottom: 0; padding: 0;}
   }*/
+.g-wrap {
+  background: #f8f8f8;
+  margin: 0;
+  padding-top: 30px;
+  height: 100%;
+  width: 100%; }
+  .g-wrap .m-main-chy {
+    width: 800px;
+    margin: 0 auto; }
+    .g-wrap .m-main-chy .goLogin {
+      padding: 5px 0;
+      border-bottom: 1px solid #538700;
+      font-size: 14px;
+      font-family: "SimSun";
+      font-weight: normal;
+      text-align: right; }
+      .g-wrap .m-main-chy .goLogin a {
+        color: #00b4ff; }
+        .g-wrap .m-main-chy .goLogin a:hover {
+          color: #cbff20; }
+    .g-wrap .m-main-chy .con {
+      padding-top: 30px;
+      margin-top: 10px;
+      background: white; }
+      .g-wrap .m-main-chy .con:before, .g-wrap .m-main-chy .con:after {
+        display: table;
+        content: ""; }
+      .g-wrap .m-main-chy .con:after {
+        clear: both; }
+      .g-wrap .m-main-chy .con .left {
+        float: left;
+        width: 50%; }
+        .g-wrap .m-main-chy .con .left .form1 .form-group {
+          margin-top: 14px; }
+          .g-wrap .m-main-chy .con .left .form1 .form-group:before, .g-wrap .m-main-chy .con .left .form1 .form-group:after {
+            display: table;
+            content: ""; }
+          .g-wrap .m-main-chy .con .left .form1 .form-group:after {
+            clear: both; }
+          .g-wrap .m-main-chy .con .left .form1 .form-group .label {
+            float: left;
+            padding-top: 4px;
+            width: 30%;
+            text-align: right;
+            font-size: 14px; }
+          .g-wrap .m-main-chy .con .left .form1 .form-group .shuru {
+            width: 70%;
+            float: left; }
+            .g-wrap .m-main-chy .con .left .form1 .form-group .shuru input {
+              padding: 4px 10px;
+              font-size: 14px;
+              width: 80%; }
+          .g-wrap .m-main-chy .con .left .form1 .form-group .btn {
+            padding-left: 30%;
+            float: left;
+            width: 100%; }
+            .g-wrap .m-main-chy .con .left .form1 .form-group .btn button {
+              width: 80%;
+              padding: 6px 0;
+              border: none;
+              background: #538700;
+              color: #fff;
+              font-size: 14px; }
+      .g-wrap .m-main-chy .con .right {
+        float: right;
+        padding: 100px;
+        width: 50%;
+        color: #fff;
+        background: #11cfff; }
+
 .header {
   width: 100%;
   height: 38px;
@@ -552,5 +552,110 @@ a, a:hover {
             background: #4879da;
             opacity: 1;
             filter: alpha(opacity=100); }
+
+.m-register-chy {
+  background: #0078d8;
+  padding-top: 50px; }
+  .m-register-chy .clearfix:after, .m-register-chy .clearfix:before {
+    display: table;
+    content: ""; }
+  .m-register-chy .clearfix:after {
+    clear: both; }
+  .m-register-chy .view {
+    margin: 0 auto;
+    width: 202px; }
+    .m-register-chy .view .title a {
+      display: block;
+      font-size: 15px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      -webkit-transition: color .1s ease,background-color .1s ease; }
+    .m-register-chy .view .title .signup {
+      float: right; }
+    .m-register-chy .view .input_wrap {
+      margin-top: 18px; }
+      .m-register-chy .view .input_wrap input {
+        padding: 8px 10px;
+        margin: 0;
+        display: block;
+        width: 100%;
+        line-height: 15px;
+        background: #e7f1f8;
+        font-size: 14px;
+        border: 1px solid #1672B9;
+        color: #555;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 2px rgba(15, 82, 135, 0.25), 0 1px 0 rgba(255, 255, 255, 0.15); }
+      .m-register-chy .view .input_wrap .input_bg {
+        background: #fff; }
+    .m-register-chy .view .name {
+      font-size: 0; }
+      .m-register-chy .view .name input {
+        display: inline-block;
+        width: 90px;
+        font-size: 14px; }
+      .m-register-chy .view .name .ming {
+        margin-left: 22px; }
+    .m-register-chy .view .fail {
+      margin: 18px 0 0;
+      padding: 10px;
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.15); }
+      .m-register-chy .view .fail ul li {
+        line-height: 18px;
+        font-size: 12px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+    .m-register-chy .view .button-wrap {
+      margin-top: 20px; }
+      .m-register-chy .view .button-wrap .btn {
+        border: 1px solid #1D80CF;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: #80C3F7;
+        background: -webkit-gradient(linear, left top, left bottom, from(#80c3f7), to(#6bbaf8));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(50, 50, 50, 0.05);
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 31px;
+        display: block;
+        padding: 0 15px;
+        outline: 0; }
+    .m-register-chy .view .sign_rember {
+      margin-top: 18px; }
+      .m-register-chy .view .sign_rember .remember-me {
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+        text-decoration: none;
+        font-size: 12px; }
+      .m-register-chy .view .sign_rember .forget_pwd {
+        display: inline-block;
+        float: right;
+        font-size: 12px;
+        color: #fff; }
+    .m-register-chy .view .third-party-signup {
+      margin-top: 18px;
+      text-align: left;
+      font-size: 14px;
+      color: #fff; }
+      .m-register-chy .view .third-party-signup a {
+        display: inline-block;
+        margin-left: 10px;
+        width: 14px;
+        height: 14px;
+        background: url(../images/simple_login_sina.png) no-repeat;
+        background-size: 100%; }
+      .m-register-chy .view .third-party-signup .teng {
+        background: url(../images/simple_login_teng.png) no-repeat;
+        background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */
