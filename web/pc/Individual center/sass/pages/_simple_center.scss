@@ -1,0 +1,28 @@
+body{font-size: 13px;}
+.g-warp{margin:0 auto; width:960px;}
+.clearfix{&:after,&:before{display: table; content: ""; } &:after{clear: both;}}
+.m-mainCon-chy{float:left; width:100%;
+    .my_center{margin: 0 328px 0 0;padding: 12px 18px;border: 1px solid #ddd;border-radius: 4px; box-shadow: 0 1px 0 #f2f4f5;
+      .title{color: #666;font-size:1.4em;}
+      .my_Message{ margin-top: 16px;
+        .pic{float: left;position: relative;box-shadow: 0 0 5px rgba(0,0,0,.3) inset;border-radius: 4px; width: 100px; height: 100px;
+        .headPic{img{width: 100px;height: 100px;border-radius: 4px;}}
+        .btn_addPic{display:none;position: absolute;bottom: 0; left: 0; padding: 0 0px;height:25px;overflow: hidden;background: none repeat scroll 0 0 #000;border-radius:0 0 4px 4px;  color: #fff;font:12px;cursor: pointer;text-align: center;
+          span{display:inline-block; font-size:12px; width: 100px; height:25px; line-height: 25px; cursor: pointer; }
+          .filePrew {display: block;position: absolute;top: 0;left: 0; width: 100px;height:25px;cursor: pointer;opacity: 0;filter:alpha(opacity=0);}
+        }
+       }
+        .pic:hover{.btn_addPic{display: inline-block;}}
+        .message{float: left; margin-left: 16px;
+          .item{margin-top: 6px; height: 16px; background: red;font-size: 0;
+            .icon{display:inline-block;width:12px; height: 14px; background: url(../images/sprites-1.9.2.png) -60px -110px no-repeat;  }
+            .show{display: inline-block; font-size:12px; background: yellow;
+              .address,.job,.sex,.change{display:inline-block;border-left: 1px solid #eee;margin-left: 6px; padding-left: 10px;}
+            }
+          }
+        }
+      }
+
+    }
+}
+.m-side-chy{float:left; margin-left: -270px; width: 270px;font-weight: 700;color: #222; }

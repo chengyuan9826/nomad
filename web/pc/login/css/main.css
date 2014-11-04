@@ -450,6 +450,8 @@ a, a:hover {
         color: #555;
         border-radius: 5px;
         box-shadow: inset 0 1px 2px rgba(15, 82, 135, 0.25), 0 1px 0 rgba(255, 255, 255, 0.15); }
+      .m-sign-chy .view .input_wrap .input_bg {
+        background: #fff; }
     .m-sign-chy .view .fail {
       margin: 18px 0 0;
       padding: 10px;
