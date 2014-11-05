@@ -1,28 +1,358 @@
-body{font-size: 13px;}
-.g-warp{margin:0 auto; width:960px;}
-.clearfix{&:after,&:before{display: table; content: ""; } &:after{clear: both;}}
-.m-mainCon-chy{float:left; width:100%;
-    .my_center{margin: 0 328px 0 0;padding: 12px 18px;border: 1px solid #ddd;border-radius: 4px; box-shadow: 0 1px 0 #f2f4f5;
-      .title{color: #666;font-size:1.4em;}
-      .my_Message{ margin-top: 16px;
-        .pic{float: left;position: relative;box-shadow: 0 0 5px rgba(0,0,0,.3) inset;border-radius: 4px; width: 100px; height: 100px;
-        .headPic{img{width: 100px;height: 100px;border-radius: 4px;}}
-        .btn_addPic{display:none;position: absolute;bottom: 0; left: 0; padding: 0 0px;height:25px;overflow: hidden;background: none repeat scroll 0 0 #000;border-radius:0 0 4px 4px;  color: #fff;font:12px;cursor: pointer;text-align: center;
-          span{display:inline-block; font-size:12px; width: 100px; height:25px; line-height: 25px; cursor: pointer; }
-          .filePrew {display: block;position: absolute;top: 0;left: 0; width: 100px;height:25px;cursor: pointer;opacity: 0;filter:alpha(opacity=0);}
+body {
+  font-size: 13px;
+  background: #fff;
+}
+
+.g-warp {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.clearfix {
+  &:after, &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.m-mainCon-chy {
+  float: left;
+  width: 100%;
+  .my_center {
+    margin: 0 328px 0 0;
+    padding-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #f2f4f5;
+    .title {
+      padding-left: 18px;
+      color: #666;
+      font-size: 1.4em;
+    }
+    .my_Message {
+      padding-left: 18px;
+      margin-top: 16px;
+      padding-bottom: 20px;
+      .pic {
+        float: left;
+        position: relative;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .3) inset;
+        border-radius: 4px;
+        width: 100px;
+        height: 100px;
+        .headPic {
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+          }
         }
-       }
-        .pic:hover{.btn_addPic{display: inline-block;}}
-        .message{float: left; margin-left: 16px;
-          .item{margin-top: 6px; height: 16px; background: red;font-size: 0;
-            .icon{display:inline-block;width:12px; height: 14px; background: url(../images/sprites-1.9.2.png) -60px -110px no-repeat;  }
-            .show{display: inline-block; font-size:12px; background: yellow;
-              .address,.job,.sex,.change{display:inline-block;border-left: 1px solid #eee;margin-left: 6px; padding-left: 10px;}
+        .btn_addPic {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 0 0px;
+          height: 25px;
+          overflow: hidden;
+          background: none repeat scroll 0 0 #000;
+          border-radius: 0 0 4px 4px;
+          color: #fff;
+          font: 12px;
+          cursor: pointer;
+          text-align: center;
+          span {
+            display: inline-block;
+            font-size: 12px;
+            width: 100px;
+            height: 25px;
+            line-height: 25px;
+            cursor: pointer;
+          }
+          .filePrew {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 25px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+          }
+        }
+      }
+      .pic:hover {
+        .btn_addPic {
+          display: inline-block;
+        }
+      }
+      .message {
+        float: left;
+        margin-left: 16px;
+        .item {
+          position: relative;
+          font-size: 0;
+          .icon {
+            position: absolute;
+            top: 6px;
+            left: 0;
+            display: inline-block;
+            width: 12px;
+            height: 16px;
+            background: url(../images/sprites-1.9.2.png) -60px -108px no-repeat;
+          }
+          .show {
+            margin-top: 6px;
+            height: 16px;
+            line-height: 16px;
+            display: inline-block;
+            font-size: 12px;
+            .address, .job, .sex, .change {
+              display: inline-block;
+              border-left: 1px solid #eee;
+              margin-left: 6px;
+              padding-left: 10px;
+              text-align: center;
+            }
+            .sex {
+              i {
+                display: inline-block;
+                width: 14px;
+                height: 16px;
+                background: url(../images/sprites-1.9.2.png) no-repeat;
+              }
+              .female {
+                background-position: -128px -109px;
+              }
+              .male {
+                background-position: -144px  -109px;
+              }
+            }
+            .change {
+              padding-left: 4px;
+              display: none;
+              i {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url(../images/sprites-1.9.2.png) -120px -48px no-repeat;
+              }
+              &:hover {
+                color: #259;
+                background: #698ebf;
+                border-radius: 4px;
+              }
+            }
+            &:hover {
+              .change {
+                display: inline-block;
+              }
+            }
+          }
+          .input {
+            margin-top: 6px;
+            padding-left: 10px;
+            font-size: 0;
+            height: 30px;
+            .address, .job {
+              display: inline-block;
+              padding-left: 10px;
+              .import {
+                display: inline-block;
+                width: 100px;
+                padding: 4px 6px;
+                font-size: 13px;
+                line-height: 15px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, .1) inset;
+                border-radius: 3px;
+                background: #fff;
+                border: 1px solid #ccc;
+                color: #222;
+              }
+            }
+            .job .import {
+              position: relative;
+              .icon {
+                position: absolute;
+                top: 6px;
+                right: 10px;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url(../images/sprites-1.9.2.png) -120px -20px no-repeat;
+              }
+            }
+            .sex {
+              font-size: 13px;
+              input {
+                margin: 10px;
+              }
+            }
+            .btn {
+              display: inline-block;
+              margin-left: 10px;
+              verticle-align: middle;
+              input {
+                position: relative;
+                display: inline-block;
+                padding: 0px 10px;
+                cursor: pointer;
+                color: #fff;
+                box-shadow: 0 1px 0 rgba(255, 255, 255, .2) inset, 0 1px 0 rgba(0, 0, 0, .2);
+                border: 1px solid #0D6EB8;
+                background: #1d7fe2;
+                font-size: 14px;
+                line-height: 1.7;
+                text-align: center;
+                border-radius: 3px;
+                background-image: -moz-linear-gradient(top, #1d7fe2, #0865c2);
+                background-image: -ms-linear-gradient(top, #1d7fe2, #0865c2);
+                background-image: -webkit-linear-gradient(top, #1d7fe2, #0865c2);
+                background-image: linear-gradient(top, #1d7fe2, #0865c2);
+              }
+            }
+          }
+        }
+        .item_1{
+          .icon{ background-position:-93px -110px;}
+        }
+        .item_2{
+          .icon{ background-position:-115px -110px;}
+        }
+        .item_3 {
+          .icon{ background-position:-119px -50px;}
+          width: auto;
+          margin-top: 10px;
+          border-top: 1px dotted #999;
+          padding-left: 10px;
+          .show {
+            padding-left: 6px;
+          }
+          .input {
+            height: auto;
+            .introduce {
+              display:block;
+              padding: 6px;
+              box-shadow: 0 1px 1px rgba(0,0,0,.1) inset;
+              border-radius: 3px;
+              background: #fff;
+              border: 1px solid #ccc;
+              color: #222;
+              .import {
+
+                display:block;
+                width: 350px;
+                border: none;
+                color: #222;
+                min-height: 66px;
+                line-height: 22px;
+                font-size: 12px;
+              }
+            }
+            .btn{display: block; margin-top:10px; text-align: right;
+              button{display: inline-block;}
             }
           }
         }
       }
-
     }
+    .get_zan{
+      padding: 12px 18px;
+      border-top: 1px dotted #eee;
+      .zan_num{
+        float: left;
+        .get{font-size:14px;color:#666;}
+        .zan,.grate{display: inline-block;
+         i{display: inline-block;margin-left: 10px; width: 14px; height:16px;background: url(../images/sprites-1.9.2.png) -126px -145px no-repeat;}
+          .num{font-size:16px;}
+          strong{font-weight: normal; font-size: 12px;}
+        }
+        .grate{margin-left: 10px;
+         i{background-position:-141px -145px; }}
+      }
+    }
+    .nav{background-color: #fcfcfc;
+      border-top: 1px solid #ddd;
+      box-shadow: 0 2px 2px #f0f0f0 inset;
+      border-radius: 0 0 4px 4px;
+      ul{
+        li{float: left;
+            a{display: block;
+              padding: 12px 20px;
+              font-weight: 700;
+              color: #666;
+              text-align: center;
+              font-size: 14px;
+              text-decoration: none;
+              line-height: 22px;
+              border: solid #fcfcfc;
+              border-width: 0 1px;
+              &:hover{color: #259;}
+              &:active{color: #222;
+                border: solid #ddd;
+                border-width: 0 1px;
+                background-color: #f7f7f7;
+                box-shadow: 0 2px 2px #f0f0f0 inset;}
+            }
+
+          .home{border-right: 1px solid #eee;}
+        }
+      }
+    }
+  }
+  .section_wrap{
+    margin: 0 328px 0 0;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #f2f4f5;
+    .top{
+      overflow: hidden;
+      padding: 7px 14px;
+      position: relative;
+      border-bottom: 1px solid #EEE;
+      h1{display: inline-block;
+        .user_name{
+          display: inline-block;
+          margin-right: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #259;}
+
+      }
+      .back{
+        position: absolute;
+        right: 14px;
+        top:7px;
+        color: #698ebf;;
+        &:hover{color: #259; text-decoration: underline;}
+      }
+    }
+    .con{padding: 12px 14px;
+      ul li{position: relative;
+        margin-top: 4px;
+        padding: 12px 0;
+        border-bottom: 1px dotted #0D6EB8;
+        a{color: #259;
+          font-weight: 700;
+          font-size: 14px;
+          &:hover{text-decoration: underline;}
+        }
+       .time{position: absolute; top:12px; right: 0px;color: #999;
+         font-size: 12px;font-weight: 400;}
+      }
+    }
+  }
 }
-.m-side-chy{float:left; margin-left: -270px; width: 270px;font-weight: 700;color: #222; }
+
+.m-side-chy {
+  float: left;
+  margin-left: -270px;
+  width: 270px;
+  font-weight: 700;
+  color: #222;
+}
